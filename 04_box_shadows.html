@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .box{
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: white;
+            /* Offset:X | Offset:Y | Color */
+            box-shadow: 10px 10px teal;
+            /* Offset:X | Offset:Y | Blur Radius | Color */
+            box-shadow: 10px 10px 20px teal ;
+            /* Negetive Values */
+            box-shadow: -10px -10px 20px teal ;
+            /* Offset:X | Offset:Y | Blur Radius | Spread Radius |Color */
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3) ;
+            /* Inside Box Shadow - Oppsite to Border Shadow */
+            /* Offset:X | Offset:Y | Blur Radius | Spread Radius |Color */
+            box-shadow: inset -3px -3px 10px 1px rgba(0,0,0,0.3);
+            /* Multiple Shadows */
+            box-shadow: 3px 3px 10px teal, -3px -3px 10px olive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio.</p>
+        </div>
+        <div class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio.</p>
+        </div>
+        <div class="box">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, odio.</p>
+        </div>
+    </div>
+</body>
+</html>
